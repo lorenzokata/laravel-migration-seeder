@@ -21,8 +21,8 @@ class CreateVacationPackagesTable extends Migration
             $table->string('location', 100);
             $table->string('transportation', 30);
             $table->string('property', 30);
-            $table->date('departing');
-            $table->date('returning');
+            $table->dateTime('departing');
+            $table->dateTime('returning');
             $table->text('details')->nullable();
             $table->float('discount', 5, 2)->nullable();
             $table->float('price', 6, 2);
