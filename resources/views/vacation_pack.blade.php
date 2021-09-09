@@ -3,6 +3,7 @@
 @section('content')
     <div class="card" style="width: 18rem;">
         <div class="card-header">
+            {{ dd($vacation_packages)}}
             Featured
         </div>
         <ul class="list-group list-group-flush">
