@@ -15,6 +15,7 @@ class CreateVacationPackagesTable extends Migration
     {
         Schema::create('vacation_packages', function (Blueprint $table) {
             $table->id();
+            $table->string('title', 100);
             $table->string('travel_agency', 80);
             $table->tinyInteger('travelers')->unsigned();
             $table->tinyInteger('days')->unsigned();

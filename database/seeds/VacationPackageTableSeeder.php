@@ -18,6 +18,8 @@ class VacationPackageTableSeeder extends Seeder
             $new_vacation_package = new VacationPackage();
 
             // popolamento dati fake
+
+            $new_vacation_package->title = 'Fuga Romantica Costosa';
             $new_vacation_package->travel_agency = 'LaPalma Agenzia Viaggi';
             $new_vacation_package->travelers = rand(1,20);
             $new_vacation_package->location = 'New York';
